@@ -10,6 +10,7 @@
 
     <div class="p-10">
       <!-- <router-view /> -->
+      <Farmer />
     </div>
 
     <div class="pt-10"></div>
@@ -19,11 +20,12 @@
 </template>
 
 <script>
-import TheNavBar from '@/components/TheNavBar';
-import TheFooter from '@/components/gem-farm/TheFooter';
-import TheCat from '@/components/gem-farm/TheCat';
+import Farmer from '@/views/Farmer.vue';
+// import TheNavBar from '@/components/TheNavBar';
+// import TheFooter from '@/components/gem-farm/TheFooter';
+// import TheCat from '@/components/gem-farm/TheCat';
 export default {
-  components: { TheCat, TheFooter, TheNavBar },
+  components: { Farmer },
 };
 </script>
 

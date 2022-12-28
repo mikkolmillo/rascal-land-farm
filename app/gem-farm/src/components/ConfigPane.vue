@@ -1,7 +1,12 @@
 <template>
   <div class="flex justify-center mb-10">
     <div class="flex-1 p-1">
-      <select class="w-full" required id="cluster" v-model="chosenCluster">
+      <select
+        class="w-full rounded-md"
+        required
+        id="cluster"
+        v-model="chosenCluster"
+      >
         <option :value="Cluster.Mainnet">Mainnet</option>
         <option :value="Cluster.Devnet">Devnet</option>
         <option :value="Cluster.Testnet">Testnet</option>
@@ -9,7 +14,12 @@
       </select>
     </div>
     <div class="flex-1 p-1">
-      <select class="w-full" required id="wallet" v-model="chosenWallet">
+      <select
+        class="w-full rounded-md"
+        required
+        id="wallet"
+        v-model="chosenWallet"
+      >
         <option class="text-gray-500" :value="null">Choose wallet..</option>
         <option :value="WalletName.Phantom">Phantom</option>
         <option :value="WalletName.Sollet">Sollet</option>

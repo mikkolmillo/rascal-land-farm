@@ -1,6 +1,8 @@
 <template>
   <ConfigPane />
-  <div v-if="!wallet" class="text-center">Pls connect (burner) wallet</div>
+  <div v-if="!wallet" class="text-center text-base font-bold text-gray-900">
+    Pls connect (burner) wallet
+  </div>
   <div v-else>
     <!--farm address-->
     <div class="mb-10">
@@ -102,8 +104,8 @@
       </Vault>
     </div>
     <div v-else>
-      <div class="w-full text-center mb-5">
-        Farmer account not found :( Create a new one?
+      <div class="w-full text-center mb-5 text-lg font-bold text-red-600">
+        Farmer account not found 😞 Create a new one?
       </div>
       <div class="w-full text-center">
         <button class="nes-btn is-primary" @click="initFarmer">

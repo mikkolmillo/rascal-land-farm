@@ -27,7 +27,7 @@
             inline-block
             bg-white
             px-1
-            text-xs
+            text-sm
             font-medium
             text-gray-900
           "
@@ -41,7 +41,7 @@
             block
             w-full
             border-0
-            p-0
+            p-1
             text-gray-900
             placeholder-gray-500
             focus:ring-0
